@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .header{
     background-color: rgba(31, 31, 35, .95);;
     color: white;
@@ -29,6 +32,7 @@
 }
 .top{
     background: url(https://res.cloudinary.com/frozen-solid-designs/image/upload/f_auto,q_auto:best/v1641075851/seigaiha_ykdj2f.png);
+    padding-top: 150px;
 }
 .top h1 i{
     color:#41d1eb;
@@ -40,7 +44,7 @@
     color: white;
 }
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 .second h3,
 .second p{
@@ -70,8 +74,20 @@ footer{
     display: flex;
     justify-content: center;
     color: white;
+    padding: 20px;
 }
-footer h1 a{
+footer a{
     text-decoration: none;
     color: white;
+    font-size: 30px;
+}
+footer a:nth-child(2){
+    padding:0 20px;
+}
+footer a:last-child{
+    padding-left: 60px;
+}
+#top{
+    color: white;
+    padding-left: 20px;
 }
