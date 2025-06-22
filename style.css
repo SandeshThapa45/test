@@ -26,7 +26,7 @@ html{
     text-decoration: none;
 }
 h2 .you::before{
-    content: '\f16';
+    content: '\f167';
     font-family: 'Font Awesome 6 Free';
 }
 .universal{
