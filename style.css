@@ -12,6 +12,7 @@ html{
     font-size: 20px;
     padding: 15px;
     position: fixed;
+    z-index: 20;
     width: 100%;
 }
 .header h2{
@@ -26,9 +27,23 @@ html{
 }
 .universal{
     font-size: 50px;
-    border-bottom: 8px solid black;
     padding-left: 50px;
     padding-top: 50px;
+    position: relative;
+}
+.universal::after{
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 100%;
+    background: black;
+    left: 0;
+    bottom: 0;
+}
+.feather::before{
+    font-family: 'Font Awesome 6 Free';
+    content: '\f52d';
+    color: #41d1eb;
 }
 .top{
     background: url(https://res.cloudinary.com/frozen-solid-designs/image/upload/f_auto,q_auto:best/v1641075851/seigaiha_ykdj2f.png);
@@ -36,6 +51,15 @@ html{
 }
 .top h1 i{
     color:#41d1eb;
+}
+.wifi::before{
+    content: '\f1eb';
+    font-family: 'Font Awesome 6 Free';
+    color: white;
+}
+.code::before{
+    content: '\f5fc';
+    font-family: 'Font Awesome 6 Free';
 }
 .second{
     background-color: #41d1eb;
@@ -55,6 +79,11 @@ body{
 }
 .last{
     background: url(https://res.cloudinary.com/frozen-solid-designs/image/upload/f_auto,q_auto:best/v1641075850/prism_ly2ugg.png);
+    color:white;
+}
+.mobile::before{
+    content: '\f3cd';
+    font-family: 'Font Awesome 6 Free';
     color:white;
 }
 .end{
@@ -90,4 +119,8 @@ footer a:last-child{
 #top{
     color: white;
     padding-left: 20px;
+}
+.mail::before{
+    content: '\f0e0';
+    font-family: 'Font Awesome 6 Free'
 }
